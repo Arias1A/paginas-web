@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Highlights by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Highlights by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.video-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
+			.video-container iframe {
+				max-width: 100%;
+			}
+			.btn-primary {
+                font-size: medium;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+            .btn-primary img {
+                max-width: 100%;
+                height: auto;
+            }
+			.imagen{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
+			.logo{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
+			.mapa{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<section id="header">
+			<header class="major">
+				<h1>Adheapax</h1><br>
+				<div class="content video-container">
+					<iframe width="500" height="315" src="https://www.youtube.com/embed/r00ikilDxW4?si=aHPiAMqVyt24J6mN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</header>
+		</section>
+
+		<!-- One -->
+		<section id="three" class="main special">
+			<div class="container">
+				<img src="adheapax.jpg" class="logo"><br>
+				<header class="major">
+					<h2>contacto: Liliana Dominguez</h2>
+					<h4 style="font-family:Arial Narrow,sans-serif; font-size: 20px; color:gray; font-weight: bold;">Contactanos:5551970080</h4>
+					<p>nos ubicamos</p>
+				</header>
+				<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.1611216929923!2d-99.17079609999999!3d19.959725199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d187419742ce83%3A0xe7294658ba4c18a6!2sGrupo%20Adheapax!5e0!3m2!1sen!2smx!4v1720649023294!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</section>
+
+		<section id="footer">
+			<div class="container">
+				<header class="major">
+					<h2>Contáctanos<br> bolda de trabajo</h2>
+				</header>
+				<form id="contact-form">
+					<div class="row gtr-uniform">
+						<div class="col-6 col-12-xsmall">
+							<input type="text" name="name" id="name" placeholder="Name" />
+						</div>
+						<div class="col-6 col-12-xsmall">
+							<input type="email" name="email" id="email" placeholder="Email" />
+						</div>
+						<div class="col-12">
+							<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+						</div>
+						<div class="col-12">
+							<ul class="actions special">
+								<li><button type="button" onclick="sendMessage()" class="btn-primary"><img type="image" src="Whatsapp.svg"></button></li>
+							</ul>
+						</div>
+					</div>
+				</form>				
+			</div>
+			
+			<script>
+				function sendMessage() {
+					var name = document.getElementById('name').value;
+					var email = document.getElementById('email').value;
+					var message = document.getElementById('message').value;
+					
+					var phoneNumber = '7733496280'; //Numero telefonico a enviar, sin poner + o espacios
+					var whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+					var whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+					
+					window.open(whatsappURL, '_blank');
+				}
+			</script><br>
+			<img src="feria.jpg.png" class="imagen">
+			<footer>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+				</ul>
+			</footer>
+		</section>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
